@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Remover Emp da UA</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+<ion-list>
+    <ion-list-header>Escaneie a UA</ion-list-header>
+  
+    <ion-item>
+        <ion-label>Items</ion-label>
+        <ion-select [interfaceOptions]="customAlertOptions" interface="alert" multiple="true" placeholder="Selecione Um">
+          <ion-select-option value="i1">Item 1</ion-select-option>
+          <ion-select-option value="i2">Item 2</ion-select-option>
+          <ion-select-option value="i3">Item 3</ion-select-option>
+          <ion-select-option value="i4">Item 4</ion-select-option>
+        </ion-select>
+      </ion-item>
+  </ion-list>
+  <ion-button expand="block">Remover Item</ion-button>
+</ion-content>
